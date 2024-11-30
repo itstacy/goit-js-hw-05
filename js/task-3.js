@@ -1,5 +1,5 @@
-const sortByDescendingFriendCount = (users) => 
-    users.sort((a, b) => b.friends.length - a.friends.length);
+const sortByDescendingFriendCount = (users) =>
+    users.toSorted((a, b) => b.friends.length - a.friends.length);
   
   // Тестування функції
   console.log(
@@ -41,6 +41,7 @@ const sortByDescendingFriendCount = (users) =>
       }
     ])
   );
+  // Очікуваний результат
   // [
   //   {
   //     name: "Ross Vazquez",
